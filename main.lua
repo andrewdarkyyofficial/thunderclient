@@ -1,18 +1,7 @@
-if not request or not loadstring then
-    return game:GetService('Players').LocalPlayer:Kick('Executor not supported.')
+local url = 'https://cdn.luarmor.net/verified/thunderclient.lua'
+
+if not hookfunction or not isfunctionhooked or not clonefunction then
+    url = 'https://api.luarmor.net/files/v3/loaders/b95e8fecdf824e41f4a030044b055add.lua'
 end
 
-local unsupported = not isfunctionhooked or not getreg or ({
-    Unknown = true,
-    Delta = true,
-    Fluxus = true,
-    Rebel = true,
-    Solara = true,
-    Xeno = true
-})[identifyexecutor()]
-
-if unsupported then
-    loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/b95e8fecdf824e41f4a030044b055add.lua'))()
-else
-    loadstring(game:HttpGet('https://cdn.luarmor.net/verified/thunderclient.lua'))()
-end
+loadstring(game:HttpGet(url))()
