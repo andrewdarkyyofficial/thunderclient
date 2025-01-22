@@ -1,4 +1,8 @@
-local unsupported = not request or ({
+if not request or not loadstring then
+    return game:GetService('Players').LocalPlayer:Kick('Executor not supported.')
+end
+
+local unsupported = not isfunctionhooked or not getreg or ({
     Unknown = true,
     Delta = true,
     Fluxus = true,
