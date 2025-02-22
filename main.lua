@@ -1,3 +1,7 @@
+if not loadstring or not request then
+    return game:GetService('Players').LocalPlayer:Kick('Your executor is not supported.')
+end
+
 local url = 'https://cdn.luarmor.net/verified/thunderclient.lua'
 
 if not clonefunction or not hookfunction or not isfunctionhooked then
