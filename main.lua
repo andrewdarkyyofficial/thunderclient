@@ -1,3 +1,5 @@
+game:GetService('Players').LocalPlayer:Kick('The script is patched on the new engine, please wait for an unpatch.')
+
 --[[
 ___________.__                      .___             _________ .__  .__               __   
 \__    ___/|  |__  __ __  ____    __| _/___________  \_   ___ \|  | |__| ____   _____/  |_ 
